@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My News</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-beta3-web/css/all.css">
+
+    <script src="./script4.js"></script>
+</head>
+<body>
+
+    <div class="main">      
+        <!-- Phần header -->
+            <div class="container">
+                <div class="row">
+                        <div class="header ">
+                                <p class="header_news" >My News</p>
+                                <i id="btSearch" class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+            </div>
+        <!-- Phần nội dung tin tức  -->
+                <div class="content-new">
+                    <p id="news" ></p> 
+                </div>
+            </div>
+    
+        <!-- HTML Phần modal -->
+            <div class="modal" style="display: none;">
+                <div class="modal-container">
+                    <div class="btn_close">
+                        <i class="fa-solid fa-xmark"></i> 
+                    </div>
+                    <div id="Search-content">
+                        <label for="">Keywords</label>
+                        <input type="text" id="inputbox">
+                        <button class="btnSearch">Search</button>
+                    </div>
+                </div>
+            </div>
+        <!-- Icon xoay vòng khi loading Page -->
+
+            <div class="loader">
+                <span class="fas fa-spinner turnaround icon "></span>
+             </div>
+             <img src="./animated.gif" style="display: none;" id="animated_gif"alt="loading....">
+
+    </div>
+
+</body>
+</html>
+
