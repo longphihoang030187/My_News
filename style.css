@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 96%;
+    margin: auto;
+   
+}
+/*CSS phần header*/
+.header{
+    width: 100%;
+    display: flex;
+    background-color: aqua;
+    height: 45px;
+    position: relative;  
+    text-align: right; 
+    margin-bottom: 20px;
+
+}
+.header_news{
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+
+}
+.header i{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 5px;
+    font-size: 25px;
+}
+.main_news{
+    display: flex;
+    margin-bottom: 20px;
+}
+.image_news img{
+    width: 350px;
+    height: 250px;
+    margin-right: 20px;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+}
+.date{
+    font-size: 16px;
+    font-weight:400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+
+}
+.description{
+    font-size: 18px;
+    font-weight: 18px;
+    margin-bottom: 10px;
+
+}
+
+.btnSearch{
+    background-color:rgb(23, 133, 65);
+    font-weight: 700;
+    padding: 5px;
+}
+.btnSearch:hover{
+    background-color: rgb(78, 214, 89);
+}
+#inputbox{
+    padding: 4px;
+}
+
+/*CSS phần modal*/
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open{
+    display: flex;
+}
+.modal-container{
+    background-color: #fff;
+    width: 80%;
+    min-height: 86px;
+    position: relative;
+}
+
+.btn_close i{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    padding: 10px;
+}
+.btn_close i:hover{
+    background-color:blue;
+    
+}
+#Search-content{
+    margin-top: 12px;
+    height: 50%;
+    transform: translateY(70%);
+    text-align: left;
+    padding-left: 10px;
+}
+.modal .open{
+    display: none;
+}
+#btSearch{
+    font-size: 25px;
+
+}
+#inputbox{
+    width: 50%;
+}
+
+#btSearch:hover{
+    background-color: gold;
+    height:100%;
+    width: 50px;
+    display:block;
+    top:0;
+
+}
+
+/* Dùng css de tao loading*/
+.loader{
+	width: 100%;
+	height: 100%;
+	background: #00fffff6;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100000000000;
+	display: block;
+	overflow: hidden;
+}
+.icon{
+	font-size: 80px;
+	color: #fff;
+	position: absolute; 
+	top: 50%;
+	left: 50%;
+	margin-top: -40px;
+	margin-left: -40px;
+}
+.turnaround{
+	animation: turnaround 1.5s linear infinite;
+	-moz-animation: turnaround 1.5s linear infinite;
+	-ms-animation: turnaround 1.5s linear infinite;
+	-o-animation: turnaround 1.5s linear infinite;
+	-webkit-animation: turnaround 1.5s linear infinite;
+}
+
+
+/* Responsive CSS */
+
+@media only screen and (max-width: 768px) {
+
+.main{
+width: 96%;
+margin: auto;
+background-color: rgba(229, 230, 228, 0.89);
+   
+}
+.main_news{
+    display: block;
+    margin-bottom: 30px;
+
+}
+.image_news img{
+    width: 100%;
+    height: auto;
+}
+.Nav-news{
+    width: 100%;
+}
+}
+
